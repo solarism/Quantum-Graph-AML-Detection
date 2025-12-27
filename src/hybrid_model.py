@@ -49,3 +49,9 @@ class HybridQGNN(nn.Module):
         # 4. 最終預測
         out = self.classifier(q_out)
         return self.sigmoid(out)
+
+if __name__ == "__main__":
+    print("✅ Hybrid Model initialized successfully!")
+    # 建立一個簡單的模型測試
+    model = HybridQGNN(input_dim=166, hidden_dim=64, n_qubits=4)
+    print(model)
