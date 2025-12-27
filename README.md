@@ -40,7 +40,7 @@ graph LR
     E(ZZ-Feature Map)
     F(Ansatz / PQC)
     end
-
+```
 ## Repository Structure
 
 Quantum-Graph-AML-Detection/
