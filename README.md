@@ -40,3 +40,16 @@ graph LR
     E(ZZ-Feature Map)
     F(Ansatz / PQC)
     end
+
+## Repository Structure
+
+Quantum-Graph-AML-Detection/
+├── data/                   # Elliptic Data Set placeholders
+├── notebooks/              # Jupyter Notebooks for experiments
+├── results/                # Figures (t-SNE, Confusion Matrix)
+├── src/
+│   ├── classical_gnn.py    # GraphSAGE implementation (PyTorch Geometric)
+│   ├── quantum_circuit.py  # Qiskit quantum circuit definitions
+│   └── hybrid_model.py     # Hybrid Quantum-Classical model class
+├── requirements.txt        # Project dependencies
+└── README.md               # Project documentation
