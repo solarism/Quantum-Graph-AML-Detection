@@ -1,8 +1,15 @@
-import torch
 import torch.nn as nn
 from torch_geometric.nn import SAGEConv
 from qiskit_machine_learning.connectors import TorchConnector
 from qiskit_machine_learning.neural_networks import EstimatorQNN
+
+# --- 新增這段程式碼來解決路徑錯誤 ---
+import sys
+import os
+# 將當前檔案 (hybrid_model.py) 的上一層目錄 (即專案根目錄) 加入搜尋路徑
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# ------------------------------------
+
 from src.quantum_circuit import build_quantum_circuit
 
 class HybridQGNN(nn.Module):
