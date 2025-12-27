@@ -45,12 +45,21 @@ graph LR
 
 ```text
 Quantum-Graph-AML-Detection/
-├── data/                   # Elliptic Data Set placeholders
-├── notebooks/              # Jupyter Notebooks for experiments
-├── results/                # Figures (t-SNE, Confusion Matrix)
+├── data/
+│   ├── raw/                  # 存放 Elliptic Data Set (無需上傳大檔，放 README 說明下載點)
+│   └── processed/            # 存放經過 GraphSAGE 採樣後的子圖數據
+├── notebooks/
+│   ├── 01_Data_Preprocessing.ipynb  # 資料清理與時序切分 [Source 49, 110]
+│   ├── 02_Quantum_Circuit_Demo.ipynb # 展示 ZZ-Feature Map 與 VQC 電路視覺化
+│   └── 03_Hybrid_Training_Demo.ipynb # 小規模訓練演示 (Proof of Concept)
 ├── src/
-│   ├── classical_gnn.py    # GraphSAGE implementation (PyTorch Geometric)
-│   ├── quantum_circuit.py  # Qiskit quantum circuit definitions
-│   └── hybrid_model.py     # Hybrid Quantum-Classical model class
-├── requirements.txt        # Project dependencies
-└── README.md               # Project documentation
+│   ├── __init__.py
+│   ├── classical_gnn.py      # GraphSAGE 模型定義 [Source 53]
+│   ├── quantum_circuit.py    # Qiskit 量子線路定義 [Source 81]
+│   ├── hybrid_model.py       # PyTorch 與 Qiskit 的混合層串接
+│   └── utils.py              # 評估指標 (F1, AUC) 與視覺化工具
+├── results/
+│   ├── figures/              # 存放 t-SNE 與混淆矩陣圖片 [Source 127, 132]
+│   └── logs/
+├── requirements.txt          # qiskit, torch, torch-geometric 等依賴
+└── README.md                 # 專案核心說明
