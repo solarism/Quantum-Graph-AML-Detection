@@ -42,7 +42,7 @@ graph LR
     end
 ```
 ## Repository Structure
-
+```text
 Quantum-Graph-AML-Detection/
 ├── data/                   # Elliptic Data Set placeholders
 ├── notebooks/              # Jupyter Notebooks for experiments
@@ -53,3 +53,4 @@ Quantum-Graph-AML-Detection/
 │   └── hybrid_model.py     # Hybrid Quantum-Classical model class
 ├── requirements.txt        # Project dependencies
 └── README.md               # Project documentation
+```
