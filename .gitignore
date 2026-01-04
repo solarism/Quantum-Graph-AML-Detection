@@ -1,0 +1,14 @@
+# Python 虛擬環境 (最常見的 10K 來源)
+venv/
+env/
+.venv/
+
+# Jupyter Notebook 暫存檔
+.ipynb_checkpoints/
+
+# Python 編譯檔
+__pycache__/
+*.pyc
+
+# 作業系統縮圖檔
+.DS_Store
