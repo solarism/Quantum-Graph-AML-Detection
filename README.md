@@ -63,3 +63,7 @@ Quantum-Graph-AML-Detection/
 │   └── logs/
 ├── requirements.txt          # qiskit, torch, torch-geometric 等依賴
 └── README.md                 # 專案核心說明
+
+ **Real-time On-chain Monitoring:** Integrated `Etherscan API` client to fetch live internal transactions for detecting DeFi layering and contract interactions.
+ 
+ **QGAN Data Augmentation:** Utilizes `EfficientSU2` generator with `SPSA` optimizer to synthesize illicit transaction samples, mitigating mode collapse in imbalanced datasets.
