@@ -12,3 +12,17 @@ __pycache__/
 
 # 作業系統縮圖檔
 .DS_Store
+
+# 資料 (檔案通常很大，不上傳 Git)
+data/
+*.csv
+*.pt
+*.pkl
+
+# 設定檔 (保護 API Key)
+.env
+config.yaml
+
+# IDE 設定
+.vscode/
+.idea/

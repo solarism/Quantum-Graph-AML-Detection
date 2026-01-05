@@ -5,7 +5,7 @@ from qiskit_algorithms.optimizers import SPSA
 
 class QuantumDataGenerator:
     """
-    基於 EfficientSU2 與 SPSA 優化器的 QGAN 生成器配置。
+    基於 EfficientSU2 與 SPSA 最佳化函數的 QGAN 生成器配置。
     用於生成合成洗錢樣本以解決資料不平衡 (Mode Collapse) 問題。
     """
     def __init__(self, num_qubits=4, reps=3):
@@ -29,7 +29,7 @@ class QuantumDataGenerator:
 
     def _build_optimizer(self):
         """
-        建構 SPSA 優化器
+        建構 SPSA 最佳化函數
         適合 NISQ 含噪環境的無梯度優化方法
         """
         # perturbation 與 learning_rate 可依實驗調整

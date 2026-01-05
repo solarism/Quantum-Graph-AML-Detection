@@ -4,7 +4,7 @@ from qiskit.circuit.library import ZZFeatureMap, RealAmplitudes
 def build_quantum_circuit(n_qubits, depth=2):
     """
     建構計畫書中提到的量子電路部分
-    1. Feature Map: 將古典資料映射到希爾伯特空間 [cite: 83]
+    1. Feature Map: 將傳統資料映射到希爾伯特空間 [cite: 83]
     2. Ansatz: 參數化量子線路 (PQC) 用於學習分類邊界 [cite: 87]
     """
     # 1. Quantum Feature Map (ZZ-Feature Map)
